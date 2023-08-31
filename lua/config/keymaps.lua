@@ -23,4 +23,6 @@ end
 map("n", "<leader>uT", "<cmd>TransparentEnable<cr>", { desc = "Enable background transparency" })
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
+map("n", "<C-p>", "<cmd>Telescope fd<cr>")
+map("n", "<leader>e", "<cmd>Oil<cr>")
 -- map("n", "<leader>ss", "<cmd>%s/<<C-r><C-w>>/<C-r><C-w>/gI<Left><Left><Left>", { desc = "Search and Replace RegExp" })
