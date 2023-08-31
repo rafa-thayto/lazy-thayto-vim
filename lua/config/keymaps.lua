@@ -23,6 +23,7 @@ end
 map("n", "<leader>uT", "<cmd>TransparentEnable<cr>", { desc = "Enable background transparency" })
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
+map("n", "<leader>h", "<cmd>noh<cr>", { desc = "Remove highlighting of search matches" })
 map("n", "<C-p>", "<cmd>Telescope find_files<cr>")
 map("n", "<leader>fw", "<cmd>Telescope live_grep<cr>")
 map("n", "tn", "<cmd>tabnew<cr>")
