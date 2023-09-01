@@ -34,6 +34,7 @@ map("n", "<leader>E", "<cmd>Neotree toggle buffers<cr>", { desc = "Toggle Buffer
 map("n", "<leader>C", function()
   require("mini.bufremove").delete(0, false)
 end, { desc = "Delete Buffer" })
+map("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Search and Replace RegExp" })
 
 map("v", "p", '"_dP')
 map("v", "<", "<gv")
@@ -41,4 +42,3 @@ map("v", ">", ">gv")
 
 map("x", "J", ":m '>+1<cr>gv=gv")
 map("x", "K", ":m '<-2<cr>gv=gv")
--- map("n", "<leader>ss", "<cmd>%s/<<C-r><C-w>>/<C-r><C-w>/gI<Left><Left><Left>", { desc = "Search and Replace RegExp" })
