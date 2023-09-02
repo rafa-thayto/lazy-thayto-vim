@@ -1,5 +1,12 @@
 return {
   -- add more treesitter parsers
+
+  {
+    "nvim-ts-autotag",
+    config = function()
+      require("nvim-ts-autotag").setup({})
+    end,
+  },
   {
     "nvim-treesitter/nvim-treesitter",
     dependencies = {
@@ -28,6 +35,15 @@ return {
         "vim",
         "yaml",
       })
+
+      -- vim.list_extend(opts.autotag, {
+      --   enable = true,
+      -- })
     end,
+  },
+  {
+    "fladson/vim-kitty",
+    ft = "kitty.conf",
+    event = "VeryLazy",
   },
 }
