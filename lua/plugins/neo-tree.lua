@@ -72,7 +72,7 @@ return {
         -- ["]b"] = "next_source",
         -- F = utils.is_available "telescope.nvim" and "find_in_dir" or nil,
         O = "system_open",
-        Y = "copy_selector",
+        -- Y = "copy_selector",
         h = "parent_or_close",
         l = "child_or_open",
         o = "open",
