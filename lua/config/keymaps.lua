@@ -19,7 +19,9 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- Oil.nvim
-map("n", "<leader>-", "<cmd>Oil<cr>")
+map("n", "-", "<cmd>Oil<cr>", { desc = "Open oil.nvim" })
+map("n", "<leader>-", "<cmd>Oil<cr>", { desc = "Open oil.nvim" })
+
 map("n", "<leader>E", "<cmd>Neotree toggle buffers<cr>", { desc = "Toggle Buffers Explorer" })
 
 -- Telescope
