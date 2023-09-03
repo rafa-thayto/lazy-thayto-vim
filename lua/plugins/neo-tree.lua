@@ -68,8 +68,8 @@ return {
       width = 30,
       mappings = {
         ["<space>"] = "none", -- disable space until we figure out which-key disabling
-        -- ["[b"] = "prev_source",
-        -- ["]b"] = "next_source",
+        ["[b"] = "prev_source",
+        ["]b"] = "next_source",
         -- F = utils.is_available "telescope.nvim" and "find_in_dir" or nil,
         O = "system_open",
         -- Y = "copy_selector",
