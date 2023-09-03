@@ -18,27 +18,39 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
--- map("n")
--- ui
+-- Oil.nvim
+map("n", "<leader>-", "<cmd>Oil<cr>")
+map("n", "<leader>E", "<cmd>Neotree toggle buffers<cr>", { desc = "Toggle Buffers Explorer" })
+
+-- Telescope
+map("n", "<C-p>", "<cmd>Telescope find_files<cr>")
+map("n", "<leader>fw", "<cmd>Telescope live_grep<cr>")
+
+-- Tranparent
 map("n", "<leader>uT", "<cmd>TransparentEnable<cr>", { desc = "Enable background transparency" })
+map("n", "<leader>ut", "<cmd>TransparentToggle<cr>", { desc = "Toggle background transparency" })
+
+-- mini.nvim
+map("n", "<leader>C", function()
+  require("mini.bufremove").delete(0, false)
+end, { desc = "Delete Buffer" })
+
+-- some utilities
+map("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Search and Replace RegExp" })
+map("n", "tn", "<cmd>tabnew<cr>")
+map("n", "<leader>n", "<cmd>noh<cr>", { desc = "Remove highlighting of search matches" })
+
+-- utilities to center the screen
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
-map("n", "<leader>n", "<cmd>noh<cr>", { desc = "Remove highlighting of search matches" })
-map("n", "<C-p>", "<cmd>Telescope find_files<cr>")
-map("n", "<leader>fw", "<cmd>Telescope live_grep<cr>")
-map("n", "tn", "<cmd>tabnew<cr>")
-map("n", "<leader>-", "<cmd>Oil<cr>")
-map("n", "<leader>E", "<cmd>Neotree toggle buffers<cr>", { desc = "Toggle Buffers Explorer" })
-map("n", "<leader>C", function()
-  require("mini.bufremove").delete(0, false)
-end, { desc = "Delete Buffer" })
-map("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Search and Replace RegExp" })
 
+-- visual
 map("v", "p", '"_dP')
 map("v", "<", "<gv")
 map("v", ">", ">gv")
 
+-- moving lines
 map("x", "J", ":m '>+1<cr>gv=gv")
 map("x", "K", ":m '<-2<cr>gv=gv")
