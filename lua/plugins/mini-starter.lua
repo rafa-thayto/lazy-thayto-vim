@@ -23,11 +23,12 @@ return {
       evaluate_single = true,
       header = logo,
       items = {
-        new_section("Find file",    "Telescope find_files", "Telescope"),
+        new_section("Pind file",    "Telescope find_files", "Telescope"),
         new_section("Recent files", "Telescope oldfiles",   "Telescope"),
         new_section("Grep text",    "Telescope live_grep",  "Telescope"),
         new_section("init.lua",     "e $MYVIMRC",           "Config"),
         new_section("Lazy",         "Lazy",                 "Config"),
+        new_section("-Explorer",    "ex .",                 "Oil"),
         new_section("New file",     "ene | startinsert",    "Built-in"),
         new_section("Quit",         "qa",                   "Built-in"),
         new_section("Session restore", [[lua require("persistence").load()]], "Session"),
