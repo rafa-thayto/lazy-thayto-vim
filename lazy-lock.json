@@ -52,6 +52,7 @@
   "plenary.nvim": { "branch": "master", "commit": "4f71c0c4a196ceb656c824a70792f3df3ce6bb6d" },
   "presence.nvim": { "branch": "main", "commit": "87c857a56b7703f976d3a5ef15967d80508df6e6" },
   "promise-async": { "branch": "main", "commit": "94f6f03c6c1e2aab551aacdf0c1e597a7269abb6" },
+  "rose-pine": { "branch": "main", "commit": "f977eeba34b030b37f93ece2fbd792477606203b" },
   "tailwindcss-colorizer-cmp.nvim": { "branch": "main", "commit": "bc25c56083939f274edcfe395c6ff7de23b67c50" },
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "6c921ca12321edaa773e324ef64ea301a1d0da62" },
   "telescope.nvim": { "branch": "master", "commit": "b744cf59752aaa01561afb4223006de26f3836fd" },

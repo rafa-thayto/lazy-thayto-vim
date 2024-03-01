@@ -42,11 +42,15 @@ return {
     end,
   },
 
+  { "rose-pine/neovim", name = "rose-pine" },
+
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-frappe",
+      -- colorscheme = "catppuccin-frappe",
+      colorscheme = "rose-pine-moon",
+      -- colorscheme = "tokyonight",
     },
   },
 }
