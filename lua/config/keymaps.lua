@@ -22,11 +22,13 @@ end
 map("n", "-", "<cmd>Oil<cr>", { desc = "Open oil.nvim" })
 map("n", "<leader>-", "<cmd>Oil<cr>", { desc = "Open oil.nvim" })
 
+-- Neo-tree
 map("n", "<leader>E", "<cmd>Neotree toggle buffers<cr>", { desc = "Toggle Buffers Explorer" })
 
 -- Telescope
 map("n", "<C-p>", "<cmd>Telescope find_files<cr>")
 map("n", "<leader>fw", "<cmd>Telescope live_grep<cr>")
+map("n", "<leader>fa", "<cmd>Telescope live_grep_args<cr>")
 
 -- Tranparent
 map("n", "<leader>uT", "<cmd>TransparentEnable<cr>", { desc = "Enable background transparency" })
