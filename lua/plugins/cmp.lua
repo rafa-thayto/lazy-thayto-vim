@@ -18,9 +18,10 @@ return {
     --   auto_brackets = { "python" }
     -- }
     -- ```
-
-    opts = function()
+    ---@param opts cmp.ConfigSchema
+    opts = function(_, opts)
       vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })
+      table.insert(opts.sources, { name = "emoji" })
       local cmp = require("cmp")
       local defaults = require("cmp.config.default")()
       return {
