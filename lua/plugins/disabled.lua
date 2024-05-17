@@ -7,10 +7,10 @@ return {
   --   "neo-tree.nvim",
   --   enabled = false,
   -- },
-  {
-    "mini.surround",
-    enabled = false,
-  },
+  -- {
+  --   "mini.surround",
+  --   enabled = false,
+  -- },
   {
     "flash.nvim",
     enabled = false,

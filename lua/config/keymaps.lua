@@ -20,7 +20,9 @@ end
 
 -- Oil.nvim
 map("n", "-", "<cmd>Oil<cr>", { desc = "Open oil.nvim" })
-map("n", "<leader>-", "<cmd>Oil<cr>", { desc = "Open oil.nvim" })
+map("n", "<leader>-", function()
+  require("oil").toggle_float()
+end, { desc = "Open parent directory in floating window" })
 
 -- Neo-tree
 map("n", "<leader>E", "<cmd>Neotree toggle buffers<cr>", { desc = "Toggle Buffers Explorer" })
