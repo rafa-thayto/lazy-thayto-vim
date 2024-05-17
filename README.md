@@ -3,6 +3,14 @@
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
 
+## 🎥 Check out my videos
+
+- [VIM/Neovim first steps - Zero to hero](https://youtu.be/7U9fVUFYx90?si=a0vMktzzFF3mSQo1)
+- [How to install plugins in Neovim using lazy.nvim](https://youtu.be/W7Jf4bnPcXY?si=ZnwscS28OcrO2AcM)
+- [VIM/Neovim advanced horizontal moves](https://youtu.be/UGtAOHMKvSw?si=seEzJ6hX_hmjbhK-)
+- [How to install Vim/Neovim on Windows](https://youtu.be/gwVe00HVvrk?si=5Bk-a58woBeKTsbF)
+- and much more on my [YouTube Channel](https://www.youtube.com/@thayto_dev)...
+
 ## ⚡️ Requirements
 
 - Neovim >= **0.9.0** (needs to be built with **LuaJIT**)
