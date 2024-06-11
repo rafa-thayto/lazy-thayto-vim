@@ -10,7 +10,7 @@ return {
         },
         ignore_filetypes = { cpp = true },
         color = {
-          suggestion_color = "#DDDDDD",
+          suggestion_color = "#FFC0CB",
 
           cterm = 244,
         },
