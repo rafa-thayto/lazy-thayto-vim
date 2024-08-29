@@ -29,6 +29,7 @@ map("n", "<leader>E", "<cmd>Neotree toggle buffers<cr>", { desc = "Toggle Buffer
 map("n", "<C-p>", "<cmd>Telescope find_files<cr>")
 map("n", "<leader>fw", "<cmd>Telescope live_grep<cr>")
 map("n", "<leader>fa", "<cmd>Telescope live_grep_args<cr>")
+map("n", "<leader>fx", "<cmd>Telescope find_files find_command=rg,--ignore,--hidden,--files,--glob=.env<cr>")
 
 -- Tranparent
 map("n", "<leader>uT", "<cmd>TransparentEnable<cr>", { desc = "Enable background transparency" })
