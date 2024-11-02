@@ -56,6 +56,7 @@ return {
         "vim",
         "yaml",
       })
+      vim.treesitter.language.register("markdown", "mdx")
 
       -- vim.list_extend(opts.autotag, {
       --   enable = true,
