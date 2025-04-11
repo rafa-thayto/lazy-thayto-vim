@@ -53,4 +53,12 @@ return {
       colorscheme = "tokyonight",
     },
   },
+  -- {
+  --   "rachartier/tiny-glimmer.nvim",
+  --   event = "TextYankPost",
+  --   cmd = "TinyGlimmer",
+  --   opts = {
+  --     -- your configuration
+  --   },
+  -- },
 }
