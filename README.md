@@ -38,7 +38,7 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
   **Linux/Mac OS**
   ```sh
-  git clone https://github.com/rafa-thayto/lazy-thayto-vim ~/.config/nvim
+  git clone https://github.com/juninhopo/lazy-juninhopo ~/.config/nvim
   ```
 
   **Windows:**
