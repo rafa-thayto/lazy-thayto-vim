@@ -24,6 +24,16 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.sql" },
     { import = "lazyvim.plugins.extras.lang.go" },
     -- { import = "lazyvim.plugins.extras.lang.rust" },
+    
+    -- GitHub Issues plugin
+    {
+      "juninhopo/issues-neovim",
+      dir = "/Users/juninhopo/Developer/issues-neovim",
+      dependencies = {
+        "nvim-lua/plenary.nvim"
+      },
+    },
+    
     -- import/override with your plugins
     { import = "plugins" },
   },
