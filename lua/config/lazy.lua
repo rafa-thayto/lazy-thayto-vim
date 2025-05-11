@@ -25,6 +25,17 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.go" },
     -- { import = "lazyvim.plugins.extras.lang.rust" },
     
+    -- Manually add nvim-cmp to fix the error
+    {
+      "hrsh7th/nvim-cmp",
+      dependencies = {
+        "hrsh7th/cmp-nvim-lsp",
+        "hrsh7th/cmp-buffer",
+        "hrsh7th/cmp-path",
+        "saadparwaiz1/cmp_luasnip",
+      },
+    },
+    
     -- GitHub Issues plugin
     {
       "juninhopo/issues-neovim",
