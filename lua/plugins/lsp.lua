@@ -23,30 +23,9 @@ return {
       },
     },
     config = function(_, opts)
-      -- Directly create the missing mappings server module before any requires
-      package.loaded["mason-lspconfig.mappings.server"] = {
-        lspconfig_to_package = function(lspconfig_name)
-          -- Simple fallback mapping based on name
-          return lspconfig_name
-        end
-      }
-      
-      -- Override automatic_enable module with an empty implementation
-      package.loaded["mason-lspconfig.features.automatic_enable"] = {
-        init = function() end
-      }
-      
-      -- Now we can safely require mason-lspconfig
-      local mason_lspconfig = require("mason-lspconfig")
-      
-      -- Setup mason-lspconfig with basic settings
-      mason_lspconfig.setup(opts.mason or {
-        automatic_installation = false, -- Disable automatic installation to avoid triggering the issue
-      })
-      
       -- Setup LSP servers
       local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
-      
+
       for server_name, server_opts in pairs(opts.servers or {}) do
         local server_available, server = pcall(require, "lspconfig." .. server_name)
         if server_available then
@@ -57,7 +36,7 @@ return {
       end
     end,
   },
-  
+
   -- Mason - manage LSP servers
   {
     "williamboman/mason.nvim",
@@ -94,8 +73,8 @@ return {
       end
     end,
   },
-  
-  -- Mason LSP config - remove the init function that was causing issues
+
+  -- Mason LSP config - simplified configuration
   {
     "williamboman/mason-lspconfig.nvim",
     dependencies = {
@@ -103,7 +82,14 @@ return {
       "neovim/nvim-lspconfig",
     },
     opts = {
-      automatic_installation = false, -- Disable automatic_installation
+      -- Use basic settings without customizing too much
+      ensure_installed = {},
+      automatic_installation = false,
     },
+    config = function(_, opts)
+      -- Simple setup without overriding internal modules
+      require("mason-lspconfig").setup(opts)
+    end,
   },
-} 
+}
+
