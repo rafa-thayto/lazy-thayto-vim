@@ -16,11 +16,8 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
--- Oil.nvim
-map("n", "-", "<cmd>Oil<cr>", { desc = "Open oil.nvim" })
-map("n", "<leader>-", function()
-  require("oil").toggle_float()
-end, { desc = "Open parent directory in floating window" })
+-- Temporary fix using netrw instead of Oil
+map("n", "-", "<cmd>Ex<cr>", { desc = "Open file explorer" })
 
 -- Neo-tree
 map("n", "<leader>E", "<cmd>Neotree toggle buffers<cr>", { desc = "Toggle Buffers Explorer" })
